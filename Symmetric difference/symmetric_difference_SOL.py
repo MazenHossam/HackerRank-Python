@@ -1,0 +1,7 @@
+m=input()
+a=set((input()).split())
+n=input()
+b=set((input()).split())
+tmp=list(map(int,(a.difference(b)).union(b.difference(a))))
+tmp.sort()
+print(*tmp, sep = "\n") 
